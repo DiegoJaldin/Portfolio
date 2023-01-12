@@ -124,7 +124,13 @@ body{
     padding-bottom: 2rem;
     background-color: var(--Darkblue);
 }
+.home__1 h1{
+    padding: 1rem;
+}
 
+.home__1 p{
+    padding: 1rem;
+}
 .home_btn{
     padding-right: 0.5rem;
 }
@@ -145,6 +151,8 @@ body{
 
 .nav_ul {
     display: flex;
+    justify-content: center;
+    padding-top: 1rem;
     gap: 1rem;
 }
 
@@ -260,11 +268,11 @@ body{
 }
 
 .portfolios > div:nth-child(2) {
-    background-color: var(--Orange);
+    background-color: var(--BlueNavy);
 }
 
 .portfolios > div:nth-child(3) {
-    background-color: var(--BlueNavy);
+    background-color: var(--Orange);
     grid-column: 1/2;
 }
 
@@ -311,16 +319,42 @@ body{
 /* --------- media queries -------- */
 
 @media (min-width: 700px) {
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        background-color: var(--Darkblue);
+    }
+
+    .home__img{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .home__1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.2rem;
+        padding-top: 1rem;
+    }
 
     .experiences {
         gap: 3rem;
     }
+
     .portfolios {
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .aboutMe p {
-        padding: rem;
     }
 
     .aboutMe__brands{
@@ -336,9 +370,7 @@ body{
         display: grid;
         gap: 15rem;
     }
-
     
-
     .exp_brands{
         display: flex;
         flex-direction: row;
