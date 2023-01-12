@@ -169,6 +169,10 @@ body{
     background-color: var(--BlueNavy);
 }
 
+.aboutMe__intro{
+    max-width: 50%;
+}
+
 .brands_img{
     height: 6rem;
 }
